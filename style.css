@@ -1,1 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: red;
+    padding: 1rem;
+}
 
+main {
+    background: yellow;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1 0 33.33333%;
+    padding: 10px;
+}
+.box-inner {
+    background: blue;
+    color: #fff;
+    padding: 1rem;
+}
+
+footer {
+    background: green;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 991px) { 
+    .box {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 575px) { 
+    .box {
+        flex-basis: 100%;
+    }
+}
+
+.featured {
+    flex-basis: 100%;
+}
